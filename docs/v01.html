@@ -1,0 +1,32 @@
+<html>
+<head>
+<script>
+function fibonacci (number) {
+ if (number <= 1) return 1;
+    
+ return fibonacci(number - 1) + fibonacci (num - 2)
+     }
+
+function compute_and_display () {
+  var variable = document.getElementById('input_id').value;
+  var out_put = fibonacci (variable)
+     }
+
+</script>
+</head>
+<body>
+<!-- USER INPUTS A NUMBER -->
+
+<!--BUTTON THAT RUNS "compute_and_display()" -->
+<form>
+<table width="350px" border="1px">
+    <input type="number" id="variable">
+    <div id="alert" style="color: red"></div>
+    </table>
+    <input type="button" onclick="compute_and_display()" value="out_put">
+
+</form>
+
+<p id="output_goes_here"></p>
+</body>
+</html>
